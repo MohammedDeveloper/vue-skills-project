@@ -1,7 +1,7 @@
 <template>
     <div class="skills">
         <form @submit.prevent="addTech">
-          <input v-validate="'min:5'" placeholder="Enter framework you would like to learn..." type="text" v-model="tech" name="tech">        
+          <input v-validate="'min:5'" maxlength="16" placeholder="Press enter to add..." type="text" v-model="tech" name="tech">        
           <transition name="alert-in" enter-active-class="animated flipInX" leave-active-class="animated flipOutX">
             <p class="alert" v-if="errors.has('tech')">
               Please enter a minimum of 5 characters

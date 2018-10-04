@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div class="container">
-      <h1 class="alignCenter">Learn - Programming Languages/Frameworks</h1>
+      <h1 class="alignCenter">Skills App</h1>        
+      <hr />
       <nav>
-        <router-link to="/aboutus/Mohammed">About Us</router-link>
-        <router-link to="/aboutus">App info</router-link>
         <router-link to="/">Learn</router-link>
-      </nav>      
-      <br />
+        <router-link to="/aboutus/Mohammed">About Us</router-link>
+        <!-- <router-link to="/aboutus">App info</router-link> -->
+      </nav>
       <br />
       <router-view :key="$route.fullPath"></router-view>
     </div>
@@ -43,10 +43,12 @@ html {
   height: 100%;
 }
 #app {
-  width: 60%;
+  width: 80%;
+  margin: 0 auto;
 }
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
+  text-align: center;
 }
 
 nav a {
@@ -57,9 +59,10 @@ nav a {
   color: rgb(0, 110, 255);
   font-weight: bold;
   margin-right: 10px;
-  float: right;
 }
 h1.alignCenter {
   text-align: center;
+  font-size: 4em;
+  margin-bottom: 15px;
 }
 </style>
