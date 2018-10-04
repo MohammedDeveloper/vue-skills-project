@@ -1,4 +1,5 @@
 # vue-skills-proj
+- Simple Vue JS based app. Adds/Deletes the programming languages/frameworks aspire to learn.
 
 ## Project setup
 ```
@@ -10,17 +11,4 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+<img src="demo.png" />
